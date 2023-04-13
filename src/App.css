@@ -1,3 +1,4 @@
+
 .App {
   text-align: center;
 }
@@ -39,9 +40,11 @@
 .cart{
   grid-area: cart;
   border: solid;
+  padding: 10px;
 }
 
 .grid{
+  margin-left: 25px;
 
   margin-top: 100px;
   display: grid;
@@ -56,5 +59,11 @@
     "p4 p5 p6 cart"
     "p7 p8 p9 cart";
    gap: 50px;
+}
+
+h1{
+
+  margin-left: 25px;
+
 }
 

@@ -2,8 +2,9 @@ import './App.css';
 
 
 import React, { useState } from 'react';
-import logo from './images.jpeg';
+import images from './images.jpeg';
 import uniqid from 'uniqid';
+import cart from './cart.png';
 
 
 
@@ -137,79 +138,80 @@ else {
     <div className='grid'>
     
     <div className="p1">
-    <p>P1</p>
-    <img alt=""  src={logo} width="150" height="200"></img>
+    <p>BOX ONE</p>
+    <img alt=""  src={images} width="200" height="200"></img>
     <p>Price : 11.99$</p>
 
     <input type="number" placeholder="Quantity"/>
     <input type="submit" value="add to cart" onClick={Addtocart}/>
     </div> 
     <div className="p2">
-    <p>P2</p>
-    <img  alt="" src={logo} width="150" height="200"></img>
+    <p>BOX TWO</p>
+    <img  alt="" src={images} width="200" height="200"></img>
     <p>Price : 22.99$</p>
 
     <input type="number" placeholder="Quantity"/>
     <input type="submit" value="add to cart" onClick={Addtocart}/>
     </div> 
     <div className="p3">
-    <p>P3</p>
-    <img alt=""  src={logo} width="150" height="200"></img>
+    <p>BOX THREE</p>
+    <img alt=""  src={images} width="200" height="200"></img>
     <p>Price : 33.99$</p>
 
     <input type="number" placeholder="Quantity"/>
     <input type="submit" value="add to cart" onClick={Addtocart}/>
     </div> 
     <div className="p4">
-    <p>P4</p>
-    <img alt=""  src={logo} width="150" height="200"></img>
+    <p>BOX FOUR</p>
+    <img alt=""  src={images} width="200" height="200"></img>
     <p>Price : 44.99$</p>
 
     <input type="number" placeholder="Quantity"/>
     <input type="submit" value="add to cart" onClick={Addtocart}/>
     </div> 
     <div className="p5">
-    <p>P5</p>
-    <img alt=""  src={logo} width="150" height="200"></img>
+    <p>BOX FIVE</p>
+    <img alt=""  src={images} width="200" height="200"></img>
     <p>Price : 55.99$</p>
 
     <input type="number" placeholder="Quantity"/>
     <input type="submit" value="add to cart" onClick={Addtocart}/>
     </div> 
     <div className="p6">
-    <p>P6</p>
-    <img  alt="" src={logo} width="150" height="200"></img>
+    <p>BOX SIX</p>
+    <img  alt="" src={images} width="200" height="200"></img>
     <p>Price : 66.99$</p>
 
     <input type="number" placeholder="Quantity"/>
     <input type="submit" value="add to cart" onClick={Addtocart}/>
     </div> 
     <div className="p7">
-    <p>P7</p>
-    <img  alt="" src={logo} width="150" height="200"></img>
+    <p>BOX SEVEN</p>
+    <img  alt="" src={images} width="200" height="200"></img>
     <p>Price : 77.99$</p>
 
     <input type="number" placeholder="Quantity"/>
     <input type="submit" value="add to cart" onClick={Addtocart}/>
     </div> 
     <div className="p8">
-    <p>P8</p>
-    <img alt=""  src={logo} width="150" height="200"></img>
+    <p>BOX EIGHT</p>
+    <img alt=""  src={images} width="200" height="200"></img>
     <p>Price : 88.99$</p>
 
     <input type="number" placeholder="Quantity"/>
     <input type="submit" value="add to cart" onClick={Addtocart}/>
     </div> 
     <div className="p9">
-    <p>P9</p>
-    <img alt=""  src={logo} width="150" height="200"></img>
+    <p>BOX NINE</p>
+    <img alt=""  src={images} width="200" height="200"></img>
     <p>Price : 99.99$</p>
 
     <input type="number" min="0" placeholder="Quantity"/>
     <input type="submit" value="add to cart" onClick={Addtocart}/>
     </div> 
     <div className="cart">
-    <div test-id="cart"><b>CART</b></div>
+    <div test-id="cart"><img alt=""  src={cart} width="20" height="20"></img>
+<b>CART</b></div>
     <br></br>
     {state.cart.map(d => <p key={d.id} id={d.id} className="list2">{d.name} - {d.quantity}<button onClick={delItem}>Delete</button></p>)}
 
