@@ -45,13 +45,14 @@
 
 .grid{
   margin-left: 25px;
-
+  padding : 25px;
   margin-top: 100px;
+  margin-bottom: 25px;
   display: grid;
   height: 1000px;
   width: auto;
   
-  grid-template-columns: 1fr 1fr 1fr 200px;
+  grid-template-columns: 1fr 1fr 1fr 300px;
   grid-template-rows: 1fr 1fr 1fr;
 
   grid-template-areas: 
@@ -67,3 +68,44 @@ h1{
 
 }
 
+#img{
+
+  height: 200px;
+  width: 500px;
+}
+
+
+@media only screen and (max-width: 1200px) /* special spettings for small screens */
+{
+
+  .grid{
+    margin-left: 25px;
+    padding : 25px;
+    margin-top: 100px;
+    margin-bottom: 25px;
+    display: grid;
+    height: 1000px;
+    width: auto;
+    
+    grid-template-columns: 1fr 100px;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  
+    grid-template-areas: 
+      "p1 cart"
+      "p2 cart"
+      "p3 cart"
+      "p4 cart"
+      "p5 cart"
+      "p6 cart"
+      "p7 cart"
+      "p8 cart"
+      "p9 cart"
+
+  }
+
+#img{
+
+  height: 100px;
+  width: 200px;
+}
+}

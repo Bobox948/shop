@@ -1,14 +1,14 @@
 import './App.css';
 import shop from './shop.png';
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
     <div>
       <h1>Welcome to my store</h1>
-      <Link to="/products">
-      <img alt="" src={shop} width="500" height="200"></img>
+      <Link to="/products"> {/* onclick on the image, redirect to the path /product */}
+      <img alt="" src={shop} id="img"></img>
     </Link>
     </div>
   );
